@@ -1,0 +1,54 @@
+# Sources and help:
+# Arch Wiki - https://wiki.archlinux.org/title/XDG_Base_Directory
+# xdg-ninja - https://github.com/b3nj5m1n/xdg-ninja
+# Tom Vincent - https://tlvince.com/vim-respect-xdg
+
+
+[[ -f ~/.bashrc ]] && . ~/.bashrc
+
+# PS1="\[\033[0;32m\]\u@\h \w $ \[\033[0m\]"
+
+export EDITOR="vim"
+export TERMINAL="st"
+export TERMINAL_PROG="st"
+export BROWSER="librewolf"
+
+# XDG Base Directory specification
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_STATE_HOME="$HOME/.local/state"
+export XDG_RUNTIME_DIR="$HOME/.local/tmp"       # Must be owned by the user with an access mode of 0700
+
+# Configs
+export XINITRC="$XDG_CONFIG_HOME/x11/xinitrc"
+export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc-2.0"
+export WGETRC="$XDG_CONFIG_HOME/wget/wgetrc"
+export INPUTRC="$XDG_CONFIG_HOME/shell/inputrc"
+export BASH_COMPLETION_USER_FILE="$XDG_CONFIG_HOME/bash-completion/bash_completion"
+
+# Data
+export GNUPGHOME="$XDG_DATA_HOME/gnupg"
+export PASSWORD_STORE_DIR="$XDG_DATA_HOME/password-store"
+export CARGO_HOME="$XDG_DATA_HOME/cargo"
+export GOPATH="$XDG_DATA_HOME/go"
+export BTPD_HOME="$XDG_DATA_HOME/btpd"
+
+# Runtime
+export LESSHISTFILE="$XDG_RUNTIME_DIR/less/history"
+export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
+
+# State
+export HISTFILE="$XDG_STATE_HOME/bash/history"
+
+export PATH="$HOME/.local/bin/:$HOME/.local/share/cargo/bin/:$HOME/.local/share/go/bin/:$PATH"
+
+# gpg-agent ssh support and other stuff
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+export FZF_DEFAULT_OPTS="--layout=reverse --height 40%"
+
+# shortcuts
+[ ! -f "$XDG_CONFIG_HOME/shell/shortcutrc" ] && setsid -f shortcuts >/dev/null 2>&1
+
+# Start graphical server on user's current tty if not already running.
+[ "$(tty)" = "/dev/tty1" ] && ! pidof -s Xorg >/dev/null 2>&1 && exec startx "$XINITRC"

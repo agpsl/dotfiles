@@ -1,0 +1,16 @@
+#!/bin/sh
+
+sct 3500
+mpd
+xwallpaper --zoom $HOME/pix/wallpapers/landscape001.jpg
+transmission-daemon --logfile $HOME/.local/log/transmission.log
+sleep 1
+
+autostart="sxhkd dunst mpdas dwmblocks"
+
+for program in $autostart; do
+	pidof -sx "$program" || "$program" &
+done >/dev/null 2>&1
+
+[ -n "$xrdbpid" ] && wait "$xrdbpid"
+

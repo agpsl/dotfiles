@@ -1,0 +1,13 @@
+[mpd]
+mpd_music_dir = "~/music"
+mpd_host = "~/.local/tmp/mpd/socket"
+mpd_connection_timeout = "5"
+mpd_crossfade_time = "5"
+
+[ncmpcpp]
+lyrics_directory = "~/.local/share/ncmpcpp/lyrics"
+
+[header]
+header_visibility = "yes"
+enable_window_title = "yes"
+

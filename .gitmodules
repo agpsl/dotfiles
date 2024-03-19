@@ -1,0 +1,18 @@
+[submodule ".config/nvim"]
+	path = .config/nvim
+	url = https://github.com/agpsl/kickstart.nvim.git
+[submodule ".local/src/st"]
+	path = .local/src/st
+	url = https://github.com/agpsl/st.git
+[submodule ".local/src/slock"]
+	path = .local/src/slock
+	url = https://github.com/agpsl/slock.git
+[submodule ".local/src/dwmblocks"]
+	path = .local/src/dwmblocks
+	url = https://github.com/agpsl/dwmblocks.git
+[submodule ".local/src/dwm"]
+	path = .local/src/dwm
+	url = https://github.com/agpsl/dwm.git
+[submodule ".local/src/dmenu"]
+	path = .local/src/dmenu
+	url = https://github.com/agpsl/dmenu.git
