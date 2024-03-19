@@ -26,6 +26,8 @@ export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc-2.0"
 export WGETRC="$XDG_CONFIG_HOME/wget/wgetrc"
 export INPUTRC="$XDG_CONFIG_HOME/shell/inputrc"
 export BASH_COMPLETION_USER_FILE="$XDG_CONFIG_HOME/bash-completion/bash_completion"
+export GTK2_RC_FILES="$XDG_CONFIG_HOME"/gtk-2.0/gtkrc
+export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME"/npm/npmrc
 
 # Data
 export GNUPGHOME="$XDG_DATA_HOME/gnupg"
@@ -37,6 +39,9 @@ export BTPD_HOME="$XDG_DATA_HOME/btpd"
 # Runtime
 export LESSHISTFILE="$XDG_RUNTIME_DIR/less/history"
 export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
+
+# Cache
+export CUDA_CACHE_PATH="$XDG_CACHE_HOME"/nv
 
 # State
 export HISTFILE="$XDG_STATE_HOME/bash/history"
