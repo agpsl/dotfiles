@@ -8,10 +8,10 @@
 
 # PS1="\[\033[0;32m\]\u@\h \w $ \[\033[0m\]"
 
-export EDITOR="vim"
+export EDITOR="nvim"
 export TERMINAL="st"
 export TERMINAL_PROG="st"
-export BROWSER="librewolf"
+export BROWSER="chromium"
 
 # XDG Base Directory specification
 export XDG_CONFIG_HOME="$HOME/.config"
