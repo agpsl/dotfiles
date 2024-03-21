@@ -73,4 +73,4 @@ git clone --recurse-submodules --remote-submodules https://github.com/agpsl/dotf
 - google-earth
 - wireguard-tools
 - openvpn
-
+- btop
