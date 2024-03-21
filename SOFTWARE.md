@@ -76,3 +76,4 @@ git clone --recurse-submodules --remote-submodules https://github.com/agpsl/dotf
 - btop
 - pcmanfm
 - zathura-pdf-poppler
+- thunderbird
