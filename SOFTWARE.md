@@ -74,3 +74,5 @@ git clone --recurse-submodules --remote-submodules https://github.com/agpsl/dotf
 - wireguard-tools
 - openvpn
 - btop
+- pcmanfm
+- zathura-pdf-poppler
