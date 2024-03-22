@@ -2,7 +2,7 @@
 
 # ohmyzsh
 export ZSH="$HOME/.config/oh-my-zsh"
-ZSH_THEME="robbyrussell"
+ZSH_THEME="zhann"
 plugins=(git zsh-vi-mode history)
 source $ZSH/oh-my-zsh.sh
 
