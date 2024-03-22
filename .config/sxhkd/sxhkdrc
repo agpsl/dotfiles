@@ -1,0 +1,14 @@
+super + Escape
+    slock
+
+super + shift + {j,k,m}
+    volctl {down,up,togglemute}
+
+super + shift + s
+    monctl
+
+super + o
+    kbctl
+
+super + s
+   flameshot gui
