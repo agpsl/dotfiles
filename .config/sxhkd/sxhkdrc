@@ -12,3 +12,9 @@ super + o
 
 super + s
    flameshot gui
+
+super + shift + b
+	chromium
+
+super + shift +f
+	pcmanfm
