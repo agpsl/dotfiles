@@ -2,7 +2,7 @@
 
 sct 3500
 mpd
-xwallpaper --zoom $HOME/pix/wallpapers/landscape001.jpg
+xwallpaper --zoom $HOME/.local/share/bg
 transmission-daemon --logfile $HOME/.local/log/transmission.log
 sleep 1
 
