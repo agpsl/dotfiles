@@ -16,5 +16,8 @@ super + s
 super + shift + b
 	chromium
 
-super + shift +f
+super + shift + f
 	pcmanfm
+
+super + shift + e
+	thunderbird
