@@ -21,3 +21,6 @@ super + shift + f
 
 super + shift + e
 	thunderbird
+
+super + shift + p
+	bitwarden-desktop
