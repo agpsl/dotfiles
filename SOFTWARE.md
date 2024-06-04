@@ -64,7 +64,7 @@ git clone --recurse-submodules --remote-submodules https://github.com/agpsl/dotf
 - openssh
 - ungoogled-chromium-bin
 - bat
-- catppuccin-gtk-theme-mocha
+- dracula-gtk-theme
 - papirus-folders-catppuccin-git
 - arandr
 - glow
